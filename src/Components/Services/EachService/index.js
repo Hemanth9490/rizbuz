@@ -5,7 +5,7 @@ const EachService = (props) => {
 
   return (
     <div
-      className="service-card text-center border-0 col-12 col-md-6
+      className="service-card mt-2 text-center border-0 col-12 col-md-6
      col-lg-4 d-flex flex-column justify-content-between"
     >
       <img
