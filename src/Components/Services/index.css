@@ -1,0 +1,9 @@
+.our-services-bg {
+  background-color: #f5f5f5;
+}
+.service-description {
+  max-height: 42px;
+  overflow: hidden;
+  font-family: roboto;
+  font-size: 15px;
+}

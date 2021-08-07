@@ -1,0 +1,12 @@
+.nav-bar-bg {
+  background-color: #141438cc;
+  height: 70px;
+}
+
+#navItem1,
+#navItem2,
+#navItem3,
+#navItem4,
+#navItem5 {
+  color: white;
+}

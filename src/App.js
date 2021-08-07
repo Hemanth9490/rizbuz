@@ -1,12 +1,11 @@
-import NavBar from "./Components/Navbar/index";
 import "./App.css";
 import Services from "./Components/Services";
-import Banner from "./Components/Banner";
+import Home from "./Components/Home";
 
 const App = () => (
   <>
-    <NavBar />
-    <Banner />
+    <Home />
+
     <Services />
   </>
 );

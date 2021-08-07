@@ -1,7 +1,12 @@
+import "./index.css";
+
 const NavBar = () => (
-  <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav
+    id="navbarFixed"
+    className="navbar navbar-expand-lg navbar-dark nav-bar-bg fixed-top"
+  >
     <a className="navbar-brand" href="/">
-      Navbar
+      <img className="logo-image" src="./images/favicon.png" alt="logoImage" />
     </a>
     <button
       className="navbar-toggler"
@@ -16,15 +21,15 @@ const NavBar = () => (
     </button>
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav mr-auto">
-        <li className="nav-item active">
-          <a className="nav-link" href="/">
-            Home <span className="sr-only">(current)</span>
+      <ul className="navbar-nav ml-auto">
+        <li className="nav-item">
+          <a className="nav-link" id="navItem1" href="/">
+            About
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">
-            Link
+          <a className="nav-link" id="navItem2" href="/">
+            Blog
           </a>
         </li>
         <li className="nav-item dropdown">
@@ -32,14 +37,21 @@ const NavBar = () => (
             className="nav-link dropdown-toggle"
             href="/"
             id="navbarDropdown"
+            id="navItem3"
             role="button"
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
           >
-            Dropdown
+            Services
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a className="dropdown-item" href="/">
+              Action
+            </a>
+            <a className="dropdown-item" href="/">
+              Another action
+            </a>
             <a className="dropdown-item" href="/">
               Action
             </a>
@@ -52,18 +64,20 @@ const NavBar = () => (
             </a>
           </div>
         </li>
+        <li className="nav-item">
+          <a className="nav-link" id="navItem4" href="/">
+            Contact us
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" id="navItem5" href="/">
+            Road Map
+          </a>
+        </li>
       </ul>
-      <form className="form-inline my-2 my-lg-0">
-        <input
-          className="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
+      <button className="btn btn-outline-light my-2 my-sm-0" type="button">
+        Get Started
+      </button>
     </div>
   </nav>
 );
