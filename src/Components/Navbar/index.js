@@ -1,7 +1,7 @@
 const NavBar = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <a className="navbar-brand" href="/">
-      Navbar
+      Hi Hemanth
     </a>
     <button
       className="navbar-toggler"
